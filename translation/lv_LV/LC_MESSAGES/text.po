@@ -1,0 +1,389 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: treasure-hunt-bot\n"
+"PO-Revision-Date: 2019-06-07 16:29\n"
+"Last-Translator: Lorenz Cuno Klopfenstein (LorenzCK)\n"
+"Language-Team: Latvian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: crowdin.com\n"
+"POT-Creation-Date: 2017-09-15 10:27+0200\n"
+"X-Crowdin-Project: treasure-hunt-bot\n"
+"X-Crowdin-Language: lv\n"
+"X-Crowdin-File: text.pot\n"
+"Language: lv_LV\n"
+
+# Name of any group before having a name assigned
+msgid "unnamed_group"
+msgstr "Nenosaukta grupa"
+
+# General failure message
+msgid "failure_general"
+msgstr "Ups! Kaut kas aizgāja greizi..\n"
+"Lūdzu, mēģiniet vēlreiz vēlāk."
+
+# Failure: user is not registered to the game with a group
+msgid "failure_group_not_found"
+msgstr "Šķiet, ka jūs neesat reģistrējies spēlē. 🤔"
+
+# Failure: user team is already registered and ready
+msgid "failure_group_already_active"
+msgstr "Esat gatavs spēlēt."
+
+# Failure: user team is not ready to play and attempted to play
+msgid "failure_group_invalid_state"
+msgstr "Šķiet, ka Jūsu komanda nav gatava spēlēt. 🙁 Lūdzu, ievērojiet jums dotos norādījumus."
+
+# Failure: internal error of a DB query
+msgid "failure_query"
+msgstr "Neveiksme datu bāzes piekļuves laikā."
+
+# Failure: current event of the game is not ready (i.e., cannot be played yet)
+msgid "failure_event_not_ready"
+msgstr "Notikums “%EVENT_NAME%“ vēl nav sākts.."
+
+# Failure: current event of the game is over
+msgid "failure_event_over"
+msgstr "Notikums “%EVENT_NAME%” ir beidzies. Paldies par spēlēšanu. 🙂"
+
+# Failure: current game has not yet been activated by administrator
+msgid "failure_game_not_ready"
+msgstr "Spēle “%GAME_NAME%” vēl nav aktivizēta. Sekojiet organizatoru norādījumiem."
+
+# Failure: current game has been closed and is over
+msgid "failure_game_dead"
+msgstr "Spēle ir galā. 🏁\n"
+"Uz tikšanos nākamajās Compass Dārgumu medībās!"
+
+# Response to /help command
+msgid "cmd_help"
+msgstr ""
+
+# Response to test QR Code
+msgid "cmd_test"
+msgstr "Gatavs! Jums ir viss nepieciešamais, lai skenētu QR kodus un piedalītos Compass Dārgumu Medībās. 👍"
+
+# Response to naked /start command: greeting and general instructions
+msgid "cmd_start_new"
+msgstr "Sveiki, %FULL_NAME%! Compass Dārgumu Medību bots laipni lūdz spēlē! Lai piedalītos spēlē ir jāreģistrējas: sekojiet organizatoru norādījumiem."
+
+# Response to naked /start command: user is already registered for a game
+msgid "cmd_start_registered"
+msgstr "Laipni lūdzam atpakaļ, %FULL_NAME%! Šis ir Compass Dārgumu Medību bots."
+
+# Response to victory code in invalid state
+msgid "cmd_start_prize_invalid"
+msgstr "Hmmm, šķiet, ka esat atraduši balvu, bet tam vēl ir par agru! 🤔"
+
+# Response to victory code (first of game)
+msgid "cmd_start_prize_first"
+msgstr "🎉 <b>Apsveicam!</b> 🎉\n"
+"Jūs esat pareizi atrisinājuši pēdējo viktorīnu un esat pirmā komanda, kas pabeigusi spēli! 🏁"
+
+# Response to victory code (not first of game, %WINNING_GROUP% first group, %INDEX% arrival position)
+msgid "cmd_start_prize_not_first"
+msgstr "🎉 <b>Apsveicam!</b> 🎉\n"
+"Jūs esat komandas numurs %INDEX%, lai pareizi atrisinātu pēdējo viktorīnu un pabeigtu spēli! 🏁"
+
+# Response to first victory code on public channel (%GROUP_NAME% name)
+msgid "cmd_start_prize_channel_first"
+msgstr "🏁 <b>Komanda “%GROUP_NAME%” ir pirmā, kas pabeidza spēli! Apsveicam!</b>"
+
+# Response to victory code on public channel (%GROUP_NAME% name, %INDEX%, arrival position)
+msgid "cmd_start_prize_channel_not_first"
+msgstr "🏁 <b>Komanda “%GROUP_NAME%” ar numuru %INDEX% pabeidz spēli!</b>"
+
+# Response to start location reached
+msgid "cmd_start_location_reached_first"
+msgstr "Sākam spēli! 🎉"
+
+# Response to any successive location reached
+msgid "cmd_start_location_reached"
+msgstr "Labi padarīts, Jūs atradāt pareizo vietu!"
+
+# Response to last location reached
+msgid "cmd_start_location_reached_last"
+msgstr "Lieliski, esat sasnieguši pēdējo vietu!"
+
+# Unexpcted location code (not requested)
+msgid "cmd_start_location_unexpected"
+msgstr "Jūsu lokācija pašlaik nav nepieciešama. Lūdzu, sekojiet norādījumiem."
+
+# Response to wrong location reached (different location than intended)
+msgid "cmd_start_location_wrong"
+msgstr "Izskatās, ka esat ieskenējis nepareizu kodu! Vai esat nonācis nepareizajā vietā? 😒"
+
+# Unknown payload (invalid QR Code, other game, etc.)
+msgid "cmd_start_wrong_payload"
+msgstr "Atvainojiet, es to nesapratu. Vai jūs ieskenējāt nepareizu kodu?"
+
+# First response after registration code, welcome to game
+msgid "cmd_register_confirm"
+msgstr "Laipni lūdzam <b>%GAME_NAME%</b>! 🎉 Sāksim ar komandas reģistrāciju."
+
+# Successive responses to registration of same game
+msgid "cmd_register_registered"
+msgstr "Jūsu reģistrācijas pieprasījums ir saņemts. 👍"
+
+# Error response for registration to a terminated game
+msgid "cmd_register_game_unallowed"
+msgstr "Spēle “%GAME_NAME%” ir beigusies. 🏁\n"
+"Uz tikšanos nākamajās Compass Dārgumu medībās!"
+
+# Error response for registration to a non-activated game
+msgid "cmd_register_game_unallowed_not_ready"
+msgstr "Spēle “%GAME_NAME%” vēl nav aktivizēta. Sekojiet organizatoru norādījumiem."
+
+# Error response for registration to a game in a terminated event
+msgid "cmd_register_game_unallowed_event"
+msgstr "Atvainojiet, notikums “%EVENT_NAME%” ir beidzies."
+
+# Error response for registration to a game in a non-activated event
+msgid "cmd_register_game_unallowed_event_not_ready"
+msgstr "Notikums “%EVENT_NAME%” vēl nav sākts."
+
+# Registration: captcha quiz for verification
+msgid "registration_new_state"
+msgstr "Vai esat gatavs spēlēt? Lai pārliecinātos, es Jums uzdošu vienkāršu jautājumu."
+
+# Registration: captcha quiz caption with instructions
+msgid "registration_new_state_caption"
+msgstr "Kāds ir šī projekta nosaukums?"
+
+# Registration: captcha quiz correct
+msgid "registration_new_response_correct"
+msgstr "<i>Pareizi!</i>\n"
+"Šķiet, ka esat kulturāls cilvēks..."
+
+# Registration: captcha quiz wrong
+msgid "registration_new_response_wrong"
+msgstr "<i>Nepareizi!</i>\n"
+"Pārbaudiet un mēģiniet vēlreiz."
+
+# Registration: name choice prompt
+msgid "registration_verified_state"
+msgstr "Lūdzu, izvēlieties savas komandas nosaukumu. Varbūt kaut ko biedējošu. Kādu nosaukumu Jūs izvēlaties?"
+
+# Registration: name choice confirmation (%GROUP_NAME% name, %GROUP_COUNT% prog. count)
+msgid "registration_verified_response_ok"
+msgstr "Labi, “%GROUP_NAME%” skan labi! Jūs esat komanda ar numuru %GROUP_COUNT%."
+
+# Registration: name choice not valid
+msgid "registration_verified_response_invalid"
+msgstr "Tas neizskatās pēc derīga nosaukuma. Izvēlieties citu nosaukumu savai komandai!"
+
+# Registration: number of participants prompt
+msgid "registration_name_state"
+msgstr "Cik cilvēku ir Jūsu komandā (Jūs ieskaitot)?"
+
+# Registration: number of participants not valid
+msgid "registration_name_response_invalid"
+msgstr "Lūdzu, atsūtiet tikai numuru."
+
+# Registration: number of participants too few
+msgid "registration_name_response_toofew"
+msgstr "Komandā jābūt vismaz <b>2</b> dalībniekiem!"
+
+# Registration: number of participants too many
+msgid "registration_name_response_toomany"
+msgstr "Maksimālais atļautais cilvēku skaits komandā ir <b>20</b>!"
+
+# Registration: number of participants confirmation
+msgid "registration_name_response_ok"
+msgstr "Jūsu komanda, kurā ir %NUMBER% spēlētāju, ir apstiprināta!"
+
+# Registration: avatar prompt
+msgid "registration_number_state"
+msgstr "Lūdzu, atsūtiet savas komandas avatāru vai attēlu."
+
+# Registration: avatar confirmation
+msgid "registration_number_response_ok"
+msgstr "Izskatās labi! Komanda “%GROUP_NAME%” ir reģistrēta. 👍"
+
+# Registration: avatar not valid
+msgid "registration_number_response_invalid"
+msgstr "Ups, kaut kas aizgāja greizi. Lūdzu, atsūtiet savas komandas attēlu."
+
+# Registration: final confirmation and instructions (%GAME_CHANNEL% Telegram channel)
+msgid "registration_ready_state_with_channel"
+msgstr "Viss kārtībā! Lūdzu, pārliecinieties, ka esat reģistrējies kanālā %GAME_CHANNEL%, un izpildiet norādījumus."
+
+# Registration: final confirmation and instructions
+msgid "registration_ready_state_without_channel"
+msgstr "Viss OK! Ievērojiet organizatoru sniegtos norādījumus."
+
+# Game state: reach assigned location and look for QR Code
+msgid "game_location_state"
+msgstr "Atrodiet norādīto vietu un meklējiet QR kodu!"
+
+# Location sent, wrong response given, do you want hint?
+msgid "game_location_hint_nudge"
+msgstr "Vai esat apmaldījies? 🤔"
+
+# Location sent, button text to ask for hint
+msgid "game_location_hint_button"
+msgstr "Pieprasīt mājienu"
+
+# Must wait for %SECONDS% seconds before getting hint
+msgid "game_location_hint_wait"
+msgstr "Pirms mājiena pieprasīšanas jāgaida vismaz %SECONDS% sekundes. ⏱"
+
+# Here's the hint
+msgid "game_location_hint_confirm"
+msgstr "Nepieciešama palīdzība? Šeit ir precīza vieta, kur jums jānonāk!"
+
+# Game state: snap selfie
+msgid "game_selfie_state"
+msgstr "Nosūtiet savas komandas selfiju! (Grimases ir atļautas. Pārliecinieties, ka visi ietilpst attēla centrā.)"
+
+# Game state: selfie confirmation with badge
+msgid "game_selfie_response_badge"
+msgstr "Jauks attēls! Šeit ir Jūsu žetons par sasniegto atrašanās vietu."
+
+# Game state: selfie confirmation
+msgid "game_selfie_response_ok"
+msgstr "Lielisks attēls!"
+
+# Game state: selfie forwarding caption for public channel (%GROUP_NAME% name, %INDEX% location number)
+msgid "game_selfie_forward_caption"
+msgstr "Komanda “%GROUP_NAME%” sasniedza atrašanās vietas numuru %INDEX%!"
+
+# Game state: solve puzzle
+msgid "game_puzzle_state"
+msgstr "Atbildiet uz viktorīnas jautājumiem šeit."
+
+# Game state: too quick puzzle response, wait %SECONDS% more for next answer
+msgid "game_puzzle_response_wait"
+msgstr "Lūdzu, pagaidiet vēl %SECONDS% sekundes, pirms rakstiet atbildi vēlreiz."
+
+# Game state: puzzle solution wrong, wait 30 seconds
+msgid "game_puzzle_response_wrong"
+msgstr "Ērr... ne gluži! 😩 Baidos, ka Jūsu atbilde nav pareiza. Lūdzu, pagaidiet dažas sekundes, pirms mēģināt vēlreiz... un šoreiz nesteidzieties! 😉"
+
+# Game state: puzzle solution correct, congratulations
+msgid "game_puzzle_response_correct"
+msgstr "Tieši tā!"
+
+# Game state: reach last location
+msgid "game_last_location_state"
+msgstr "Gandrīz tur... Ātri, dodieties uz pēdējo lokāciju!"
+
+# Game state: please snap last selfie
+msgid "game_last_selfie_state"
+msgstr "Gandrīz viss: atsūtiet pēdējo selfiju, lai nosvinētu savu gaidāmo uzvaru!"
+
+# Last selfie received
+msgid "game_last_selfie_response_ok"
+msgstr "Lielisks attēls!"
+
+# Last selfie caption for public channel
+msgid "game_last_selfie_forward_caption"
+msgstr "Komanda “%GROUP_NAME%” ir sasniegusi pēdējo lokāciju!"
+
+# Game state: solve last puzzle prompt
+msgid "game_last_puzzle_state"
+msgstr "Atrisiniet pēdējo viktorīnas uzdevumu, sniedzot atbildi šeit."
+
+# Instructions for solving last puzzle, sent first time together with puzzle image
+msgid "game_last_puzzle_instructions"
+msgstr "Risinot iepriekšējās viktorīnas, Jūs esat savācis vērtīgus padomus, kas Jums būs nepieciešami, lai atrisinātu pēdējo viktorīnu un uzvarētu. Veiksmi! 😉"
+
+# Last puzzle solution given is wrong
+msgid "game_last_puzzle_wrong"
+msgstr "<i>Nepareizi!</i>"
+
+# Game state: the game is over, thank you very much
+msgid "game_won_state"
+msgstr "Jūs pabeidzāt '%GAME_NAME%' spēli!"
+
+# Default response for any other message
+msgid "fallback_response"
+msgstr "Atvainojiet, es nesapratu Jūsu lūgumu."
+
+# Photo was unexpected
+msgid "unrequested_photo"
+msgstr "Paldies par attēlu! Lūdzu, sūtiet fotoattēlus tikai pēc pieprasījuma. 😉"
+
+# Unsupported kind of message (location, audio, etc.)
+msgid "unsupported_other"
+msgstr "Pagaidiet, pagaidiet! Es vēl neesmu tik gudrs un nespēju tikt galā ar šiem ziņojumiem. Lūdzu, sūtiet tikai tekstu vai fotoattēlus."
+
+# Bot is currently deactivated
+msgid "deactivated"
+msgstr "Pašlaik netiek rīkotas Compass Dārgumu Medības. Mēs drīz atgriezīsimies.\n"
+"<i>Sekojiet līdzi!</i>"
+
+# After victory, bot asks for questionnaire and certificate generation
+msgid "questionnaire_init_question"
+msgstr "Paldies par spēlēšanu! Mēs vēlamies Jums uzdot dažus vienkāršus jautājumus par spēli. Kad atbildēsiet uz visiem jautājumiem, saņemsiet sertifikātu par uzvaru. 🏅"
+
+# Affirmative answer to questionnaire question
+msgid "questionnaire_init_question_response"
+msgstr "Esmu gatavs!"
+
+# Instructions about the questionnaire that will be delivered
+msgid "questionnaire_init_instructions"
+msgstr "Mēs Jums uzdosim 3 jautājumus, uz kuriem varēsiet atbildēt, izmantojot skalu no 1 līdz 5. Ceturtais un pēdējais jautājums ir brīvā teksta jautājums: ja nevēlaties atbildēt, lūdzu, ierakstiet “no”."
+
+# Let's begin
+msgid "questionnaire_init_begin"
+msgstr "Aiziet!"
+
+msgid "questionnaire_q1"
+msgstr "📝 Man patika Compass Dārgumu Medības.."
+
+msgid "questionnaire_q2"
+msgstr "📝 Telegram bots bija viegli lietojams un labi piemērots spēlei."
+
+msgid "questionnaire_q3"
+msgstr "📝 Es saprotu, kā darbojas QR kodi un kā tie mijiedarbojas ar botu."
+
+msgid "questionnaire_q4"
+msgstr "📝 Lūdzu, ierakstiet jebkuru citu komentāru vai ieteikumu:"
+
+# Answer on Likert scale, must begin with digit 1
+msgid "questionnaire_likert_1"
+msgstr "1: pilnībā nepiekrītu"
+
+# Answer on Likert scale, must begin with digit 2
+msgid "questionnaire_likert_2"
+msgstr "2: nepiekrītu"
+
+# Answer on Likert scale, must begin with digit 3
+msgid "questionnaire_likert_3"
+msgstr "3: neitrāli"
+
+# Answer on Likert scale, must begin with digit 4
+msgid "questionnaire_likert_4"
+msgstr "4: piekrītu"
+
+# Answer on Likert scale, must begin with digit 5
+msgid "questionnaire_likert_5"
+msgstr "5: pilnībā piekrītu"
+
+msgid "questionnaire_free_confirmation"
+msgstr "Ieteikumi reģistrēti. Vai vēlaties apstiprināt?"
+
+msgid "questionnaire_free_confirmation_confirm_button"
+msgstr "Jā"
+
+msgid "questionnaire_free_confirmation_deny_button"
+msgstr "Nē, ļaujiet man mēģināt vēlreiz"
+
+msgid "questionnaire_free_retry_prompt"
+msgstr "Paldies! Šeit varat ierakstīt jebkādus komentārus vai ieteikumus:"
+
+# Finished, thank you, generating the certificate
+msgid "questionnaire_finish_generating"
+msgstr "Paldies! 🙌 Notiek sertifikāta ģenerēšana..."
+
+# Caption for the certificate transmission
+msgid "questionnaire_attachment_caption"
+msgstr "“%GROUP_NAME%” sertifikāts."
+
+# Final thank you
+msgid "questionnaire_finish_thankyou"
+msgstr "Vēlreiz paldies, ka spēlējāt! 🙂"
+
